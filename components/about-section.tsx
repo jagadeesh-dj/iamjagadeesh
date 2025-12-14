@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { GraduationCap, Briefcase, Sparkles } from "lucide-react"
+import { GraduationCap, Briefcase, Sparkles, Download } from "lucide-react"
 
 const skills = [
   "Python",
@@ -65,10 +65,10 @@ export function AboutSection() {
                 Software Engineer focused on backend development and{" "}
                 <span className="text-gradient">AI-powered systems</span>.
               </p>
-              <p className="text-muted-foreground leading-relaxed max-w-2xl">
+              <p className="text-muted-foreground leading-relaxed max-w-2xl mb-8">
                 I specialize in building scalable backend services using Python, FastAPI, and Django, with hands-on
                 experience deploying applications on Azure and integrating LLM-based automation to solve real-world
-                business problems.
+                business problems.            
               </p>
             </div>
 

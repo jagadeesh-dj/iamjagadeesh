@@ -27,7 +27,7 @@ export function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-4">Navigation</h4>
             <nav className="space-y-3">
-              {["Work", "About", "Contact"].map((item) => (
+              {["About","Projects","Contact"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

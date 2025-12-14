@@ -9,9 +9,9 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
 const socialLinks = [
-  { name: "Email", href: "mailto:jagadeesh@example.com", icon: Mail, label: "jagadeesh@example.com" },
-  { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin, label: "linkedin.com/in/jagadeesh" },
-  { name: "GitHub", href: "https://github.com", icon: Github, label: "github.com/jagadeesh" },
+  { name: "Email", href: "mailto:iamjagadeesh.d@gmail.com", icon: Mail, label: "iamjagadeesh.d@gmail.com" },
+  { name: "LinkedIn", href: "www.linkedin.com/in/jagadeesh-dj", icon: Linkedin, label: "linkedin.com/in/jagadeesh" },
+  { name: "GitHub", href: "https://github.com/jagadeesh-dj", icon: Github, label: "github.com/jagadeesh" },
 ]
 
 export function ContactSection() {
