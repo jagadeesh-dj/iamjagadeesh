@@ -1,0 +1,57 @@
+# Next.js production build artifacts
+.next/
+out/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# TypeScript cache
+.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# npm/pnpm/yarn lock files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# pnpm-lock.yaml is typically committed, but if you prefer to ignore it:
+# pnpm-lock.yaml
+
+# Local development and editor files
+.DS_Store
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.log
+*.backup
+*.swp
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might be created by various tools
+.tool-versions
+.direnv/
+
+# Vercel artifacts
+.vercel/
+
+# Turbopack cache
+.turbopack/
+
+# Next.js specific files (might be inside .next, but good to be explicit)
+next-env.d.ts
