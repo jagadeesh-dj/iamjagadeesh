@@ -18,7 +18,7 @@ export function Footer() {
               href="mailto:jagadeesh@example.com"
               className="inline-flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors group"
             >
-              jagadeesh@example.com
+              iamjagadeesh.d@gmail.com
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>

@@ -75,8 +75,7 @@ export function HeroSection() {
           }`}
         >
           <p className="text-muted-foreground max-w-xl text-lg leading-relaxed mb-10">
-            Specializing in FastAPI, Django, and Machine Learning. I create scalable solutions that transform how
-            businesses operate.
+            Specializing in FastAPI, Django, and Machine Learning, I build scalable, high-performance backend solutions that solve real-world business problems.
           </p>
         </div>
 

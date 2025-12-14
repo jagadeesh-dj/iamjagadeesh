@@ -8,7 +8,8 @@ const projects = [
     id: 1,
     title: "HRMS System",
     category: "Backend / AI",
-    description: "Comprehensive HR management system with payroll, attendance, and LLM-based assistant.",
+    description:
+      "End-to-end HR management platform featuring payroll processing, attendance tracking, and an AI-powered LLM assistant to automate HR queries and internal workflows, built for scalability and performance.",
     technologies: ["Flask", "FastAPI", "Celery", "Redis", "MySQL"],
     link: "#",
   },
@@ -16,19 +17,23 @@ const projects = [
     id: 2,
     title: "Finance Application",
     category: "Analytics / ML",
-    description: "Real-time financial analytics platform with predictive analytics powered by Gemini 1.5.",
+    description:
+      "Real-time financial analytics application providing data insights and predictive forecasting using Gemini 1.5, with RESTful APIs designed for high-throughput and accurate decision support.",
     technologies: ["FastAPI", "MySQL", "Gemini 1.5", "REST APIs"],
     link: "#",
   },
   {
     id: 3,
-    title: "OCR & Document Processing",
+    title: "OCR System",
     category: "Computer Vision",
-    description: "Intelligent document processing system using deep learning for OCR with LLM post-processing.",
+    description:
+      "AI-driven document processing system leveraging deep learning–based OCR and LLM-powered post-processing to extract, validate, and structure data from unstructured documents efficiently.",
     technologies: ["TensorFlow", "Keras", "OpenCV", "Django"],
     link: "#",
   },
-]
+];
+
+
 
 export function ProjectsSection() {
   const [isVisible, setIsVisible] = useState(false)

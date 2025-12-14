@@ -10,12 +10,21 @@ const inter = Inter({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Jagadeesh D | Python Developer & AI/ML Engineer",
+  title: "Jagadeesh D | Python Backend & AI Engineer",
   description:
-    "Portfolio of Jagadeesh D - Software Engineer specializing in Python backend development, AI-powered systems, FastAPI, Django, and machine learning solutions.",
-  keywords: ["Python Developer", "AI Engineer", "Machine Learning", "FastAPI", "Django", "Backend Developer"],
-    generator: 'v0.app'
-}
+    "Jagadeesh D is a Python Backend and AI Engineer specializing in FastAPI, Django, machine learning, and scalable backend systems.",
+  keywords: [
+    "Python Backend Engineer",
+    "AI Engineer",
+    "Machine Learning Engineer",
+    "FastAPI Developer",
+    "Django Developer",
+    "Backend Developer",
+  ],
+  authors: [{ name: "Jagadeesh D" }],
+  creator: "Jagadeesh D",
+  robots: "index, follow",
+};
 
 export default function RootLayout({
   children,

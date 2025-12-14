@@ -76,7 +76,7 @@ export function ContactSection() {
           <div className="mb-16">
             <p className="text-sm font-medium text-muted-foreground tracking-wide uppercase mb-4">Contact</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              Let's work together on your <span className="text-gradient">next project</span>.
+              Let’s connect and discuss <span className="text-gradient"> opportunities</span>.
             </h2>
           </div>
 
