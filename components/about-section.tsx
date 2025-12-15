@@ -30,9 +30,20 @@ const experience = {
   role: "Software Engineer",
   company: "Adhiran Infotech",
   period: "Nov 2024 – Present",
-  highlights: ["Backend development", "AI/ML systems", "Automation testing", "REST APIs", "Web scraping"]
-  
-}
+  highlights: [
+    "Backend development",
+    "AI/ML systems",
+    "Automation testing",
+    "REST APIs",
+    "Web scraping"
+  ],
+  description: [
+    "Developed and maintained scalable backend services using Python, Django, and FastAPI.",
+    "Implemented AI/ML-powered automation tools and integrated LLM-based solutions to streamline workflows.",
+    "Designed and deployed secure REST APIs and automated testing pipelines, reducing manual effort by 40%.",
+    "Conducted data extraction and web scraping projects for business intelligence insights."
+  ]
+};
 
 export function AboutSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -76,7 +87,7 @@ export function AboutSection() {
                 className="inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors
                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
                           disabled:opacity-50 disabled:pointer-events-none ring-offset-background
-                          bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-5"
+                          bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-5 mt-5"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
@@ -85,6 +96,7 @@ export function AboutSection() {
 
             {/* Experience – single featured card */}
             <div className="lg:col-span-4 bg-card rounded-3xl p-8 border border-border hover-lift flex flex-col justify-between">
+
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 rounded-xl bg-primary/10">
@@ -95,18 +107,23 @@ export function AboutSection() {
 
                 <p className="text-xs text-primary font-medium mb-2">{experience.period}</p>
                 <h4 className="text-lg font-semibold text-foreground mb-1">{experience.role}</h4>
-                <p className="text-sm text-muted-foreground mb-4">{experience.company}</p>
+                <p className="text-sm text-muted-foreground mb-1">{experience.company}</p>
               </div>
 
-              <div className="flex flex-wrap gap-2 mt-2">
-                {experience.highlights.map((h) => (
+              <div className="flex flex-wrap gap-2 mt-1">
+                {/* {experience.highlights.map((h) => (
                   <span
                     key={h}
                     className="text-xs px-2.5 py-1 rounded-full bg-secondary text-muted-foreground"
                   >
                     {h}
                   </span>
-                ))}
+                ))} */}
+                    <ul className="list-disc list-inside mt-4 text-xs text-muted-foreground space-y-1">
+                      {experience.description.map((desc, index) => (
+                        <li key={index}>{desc}</li>
+                      ))}
+                    </ul>
               </div>
             </div>
           </div>

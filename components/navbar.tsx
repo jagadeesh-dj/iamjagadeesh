@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils"
 import { useTheme } from "@/components/theme-provider"
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  // { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", id: "about" },
+  // { name: "Experience", id: "experience" },
+  { name: "Projects", id: "projects" },
+  { name: "Contact", id: "contact" },
 ]
 
 export function Navbar() {
@@ -17,6 +17,13 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
   const { theme, toggleTheme } = useTheme()
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,6 +41,7 @@ export function Navbar() {
         }
       }
     }
+
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -47,20 +55,25 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <a href="#home" className="group relative">
-            <span className="text-lg font-semibold text-foreground tracking-tight">Jagadeesh</span>
-            {/* <span className="block text-xs text-muted-foreground">Python Developer</span> */}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-          </a>
+          {/* Logo */}
+          <button onClick={() => scrollToSection("home")} className="group relative">
+<span
+  className="text-2xl tracking-wide text-foreground italic"
+  style={{ fontFamily: "'Allura', 'Great Vibes', 'Dancing Script', cursive" }}
+>
+  Jagadeesh
+</span>        
+<span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+          </button>
 
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => {
-              const sectionId = link.href.replace("#", "")
-              const isActive = activeSection === sectionId
+              const isActive = activeSection === link.id
               return (
-                <a
+                <button
                   key={link.name}
-                  href={link.href}
+                  onClick={() => scrollToSection(link.id)}
                   className={cn(
                     "relative px-5 py-2.5 text-sm font-medium transition-all duration-300 rounded-full",
                     isActive
@@ -69,7 +82,7 @@ export function Navbar() {
                   )}
                 >
                   {link.name}
-                </a>
+                </button>
               )
             })}
 
@@ -86,7 +99,7 @@ export function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Buttons */}
           <div className="md:hidden flex items-center gap-2">
             <button
               onClick={toggleTheme}
@@ -109,6 +122,7 @@ export function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <div
         className={cn(
           "md:hidden overflow-hidden transition-all duration-300 ease-out",
@@ -117,14 +131,16 @@ export function Navbar() {
       >
         <div className="bg-card/95 backdrop-blur-xl border-b border-border px-6 py-4 space-y-1">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
-              className="block py-3 text-foreground font-medium hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                scrollToSection(link.id)
+                setIsMobileMenuOpen(false)
+              }}
+              className="block w-full text-left py-3 text-foreground font-medium hover:text-primary transition-colors"
             >
               {link.name}
-            </a>
+            </button>
           ))}
         </div>
       </div>
