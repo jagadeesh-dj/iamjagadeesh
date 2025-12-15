@@ -70,7 +70,7 @@ export function AboutSection() {
           {/* Top: About + Experience */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-6">
             {/* About */}
-            <div className="lg:col-span-8 bg-card rounded-3xl p-8 lg:p-10 border border-border hover-lift">
+            <div className="lg:col-span-7 bg-card rounded-3xl p-8 lg:p-10 border border-border hover-lift">
               <h2 className="text-sm font-medium text-muted-foreground tracking-wide uppercase mb-3">About</h2>
               <p className="text-2xl md:text-3xl font-medium text-foreground leading-relaxed mb-3">
                 Software Engineer focused on backend development and{" "}
@@ -95,7 +95,7 @@ export function AboutSection() {
             </div>
 
             {/* Experience – single featured card */}
-            <div className="lg:col-span-4 bg-card rounded-3xl p-8 border border-border hover-lift flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-card rounded-3xl p-8 border border-border hover-lift flex flex-col justify-between">
 
               <div>
                 <div className="flex items-center gap-3 mb-6">
@@ -119,7 +119,7 @@ export function AboutSection() {
                     {h}
                   </span>
                 ))} */}
-                    <ul className="list-disc list-inside mt-4 text-xs text-muted-foreground space-y-1">
+                    <ul className="list-disc list-inside mt-4 text-sm text-muted-foreground space-y-1">
                       {experience.description.map((desc, index) => (
                         <li key={index}>{desc}</li>
                       ))}
