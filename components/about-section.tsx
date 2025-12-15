@@ -60,16 +60,27 @@ export function AboutSection() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-6">
             {/* About */}
             <div className="lg:col-span-8 bg-card rounded-3xl p-8 lg:p-10 border border-border hover-lift">
-              <h2 className="text-sm font-medium text-muted-foreground tracking-wide uppercase mb-6">About</h2>
-              <p className="text-2xl md:text-3xl font-medium text-foreground leading-relaxed mb-6">
+              <h2 className="text-sm font-medium text-muted-foreground tracking-wide uppercase mb-3">About</h2>
+              <p className="text-2xl md:text-3xl font-medium text-foreground leading-relaxed mb-3">
                 Software Engineer focused on backend development and{" "}
                 <span className="text-gradient">AI-powered systems</span>.
               </p>
-              <p className="text-muted-foreground leading-relaxed max-w-2xl mb-8">
+              <p className="text-muted-foreground leading-relaxed max-w-2xl mb-4">
                 I specialize in building scalable backend services using Python, FastAPI, and Django, with hands-on
                 experience deploying applications on Azure and integrating LLM-based automation to solve real-world
                 business problems.            
               </p>
+              <a
+                href="/JAGADEESHD_RESUME.pdf"
+                download
+                className="inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors
+                          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+                          disabled:opacity-50 disabled:pointer-events-none ring-offset-background
+                          bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-5"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download Resume
+              </a>
             </div>
 
             {/* Experience – single featured card */}
