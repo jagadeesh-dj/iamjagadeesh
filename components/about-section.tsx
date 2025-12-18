@@ -93,45 +93,8 @@ export function AboutSection() {
                 Download Resume
               </a>
             </div>
-
-            {/* Experience – single featured card */}
-            <div className="lg:col-span-5 bg-card rounded-3xl p-8 border border-border hover-lift flex flex-col justify-between">
-
-              <div>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 rounded-xl bg-primary/10">
-                    <Briefcase className="w-5 h-5 text-primary" />
-                  </div>
-                  <h3 className="text-sm font-medium text-muted-foreground tracking-wide uppercase">Experience</h3>
-                </div>
-
-                <p className="text-xs text-primary font-medium mb-2">{experience.period}</p>
-                <h4 className="text-lg font-semibold text-foreground mb-1">{experience.role}</h4>
-                <p className="text-sm text-muted-foreground mb-1">{experience.company}</p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 mt-1">
-                {/* {experience.highlights.map((h) => (
-                  <span
-                    key={h}
-                    className="text-xs px-2.5 py-1 rounded-full bg-secondary text-muted-foreground"
-                  >
-                    {h}
-                  </span>
-                ))} */}
-                    <ul className="list-disc list-inside mt-4 text-sm text-muted-foreground space-y-1">
-                      {experience.description.map((desc, index) => (
-                        <li key={index}>{desc}</li>
-                      ))}
-                    </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Education + Skills */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             {/* Education */}
-            <div className="lg:col-span-4 bg-card rounded-3xl p-8 border border-border hover-lift">
+            <div className="lg:col-span-5 bg-card rounded-3xl p-8 border border-border hover-lift">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 rounded-xl bg-primary/10">
                   <GraduationCap className="w-5 h-5 text-primary" />
@@ -154,8 +117,38 @@ export function AboutSection() {
               </div>
             </div>
 
+            {/* Experience – single featured card */}
+            {/* <div className="lg:col-span-5 bg-card rounded-3xl p-8 border border-border hover-lift flex flex-col justify-between">
+
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 rounded-xl bg-primary/10">
+                    <Briefcase className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-sm font-medium text-muted-foreground tracking-wide uppercase">Experience</h3>
+                </div>
+
+                <p className="text-xs text-primary font-medium mb-2">{experience.period}</p>
+                <h4 className="text-lg font-semibold text-foreground mb-1">{experience.role}</h4>
+                <p className="text-sm text-muted-foreground mb-1">{experience.company}</p>
+              </div>
+
+              <div className="flex flex-wrap gap-2 mt-1">
+               
+                    <ul className="list-disc list-inside mt-4 text-sm text-muted-foreground space-y-1">
+                      {experience.description.map((desc, index) => (
+                        <li key={index}>{desc}</li>
+                      ))}
+                    </ul>
+              </div>
+            </div> */}
+          </div>
+
+          {/* Education + Skills */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
             {/* Skills */}
-            <div className="lg:col-span-8 bg-card rounded-3xl p-8 border border-border">
+            <div className="lg:col-span-full bg-card rounded-3xl p-8 border border-border">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-2 rounded-xl bg-accent/10">
                   <Sparkles className="w-5 h-5 text-accent" />

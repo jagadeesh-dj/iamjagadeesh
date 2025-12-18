@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 
 const socialLinks = [
   { name: "Email", href: "mailto:iamjagadeesh.d@gmail.com", icon: Mail, label: "iamjagadeesh.d@gmail.com" },
-  { name: "LinkedIn", href: "www.linkedin.com/in/jagadeesh-dj", icon: Linkedin, label: "linkedin.com/in/jagadeesh" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/jagadeesh-dj/", icon: Linkedin, label: "linkedin.com/in/jagadeesh" },
   { name: "GitHub", href: "https://github.com/jagadeesh-dj", icon: Github, label: "github.com/jagadeesh" },
 ]
 

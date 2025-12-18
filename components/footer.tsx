@@ -15,7 +15,7 @@ export function Footer() {
               Python Developer crafting AI-powered backend systems and scalable solutions.
             </p>
             <a
-              href="mailto:jagadeesh@example.com"
+              href="mailto:iamjagadeesh.d@gmail.com"
               className="inline-flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors group"
             >
               iamjagadeesh.d@gmail.com
@@ -27,7 +27,7 @@ export function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-4">Navigation</h4>
             <nav className="space-y-3">
-              {["About","Projects","Contact"].map((item) => (
+              {["About","Experience", "Projects","Contact"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -44,7 +44,7 @@ export function Footer() {
             <h4 className="text-sm font-medium text-muted-foreground uppercase tracking-wide mb-4">Connect</h4>
             <div className="flex gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/jagadeesh-dj/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-secondary hover:bg-foreground text-foreground hover:text-background transition-all duration-300"
@@ -53,7 +53,7 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/jagadeesh-dj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-xl bg-secondary hover:bg-foreground text-foreground hover:text-background transition-all duration-300"
@@ -62,7 +62,7 @@ export function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="mailto:jagadeesh@example.com"
+                href="mailto:iamjagadeesh.d@gmail.com"
                 className="p-3 rounded-xl bg-secondary hover:bg-foreground text-foreground hover:text-background transition-all duration-300"
                 aria-label="Email"
               >
@@ -75,7 +75,6 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">© {currentYear} Jagadeesh D. All rights reserved.</p>
-          <p className="text-sm text-muted-foreground">Crafted with care in Chennai, India</p>
         </div>
       </div>
     </footer>

@@ -6,32 +6,48 @@ import { Briefcase, Calendar } from "lucide-react"
 const experiences = [
   {
     id: 1,
-    role: "Python Developer",
-    company: "Innotrat",
+    role: "Software Engineer",
+    company: "Adhiran Infotech",
     location: "Chennai",
-    period: "Oct 2024 – Present",
+    period: "Nov 2024 – Present",
     type: "Full-time",
+    description: [
+      "Built and maintained backend services using Python, Django, and FastAPI.",
+      "Integrated AI and LLM-based features to automate internal workflows.",
+      "Designed secure REST APIs and improved testing processes.",
+    ],
     technologies: ["Python", "FastAPI", "Azure", "LLM"],
   },
   {
     id: 2,
-    role: "Associate Software Engineer",
+    role: "Machine Learning Intern",
     company: "HYR Global Source",
     location: "Chennai",
-    period: "May 2024 – Oct 2024",
-    type: "Full-time",
-    technologies: ["FastAPI", "LLM", "n8n", "MySQL"],
+    period: "Jan 2024 – Mar 2024",
+    type: "Internship",
+    description: [
+      "Worked on machine learning models for data analysis tasks.",
+      "Implemented basic deep learning and neural network solutions.",
+      "Assisted in building computer vision and automation pipelines.",
+    ],
+    technologies: ["ML Algorithms", "DL Frameworks", "Neural Networks", "Computer Vision"],
   },
   {
     id: 3,
-    role: "Software Developer Intern",
-    company: "HYR Global Source",
+    role: "Python Developer Intern",
+    company: "Shiash Infotech",
     location: "Chennai",
-    period: "Feb 2024 – May 2024",
+    period: "Oct 2022 – Dec 2022",
     type: "Internship",
-    technologies: ["Django", "REST APIs", "Pytest"],
+    description: [
+      "Developed backend features using Python and Django.",
+      "Built and maintained REST APIs for web applications.",
+      "Worked with databases and backend integrations.",
+    ],
+    technologies: ["Django", "REST APIs", "MYSQL", "Python"],
   },
 ]
+
 
 export function ExperienceSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -56,7 +72,7 @@ export function ExperienceSection() {
   }, [])
 
   return (
-    <section id="experience" ref={sectionRef} className="py-16 px-6 lg:px-8 bg-secondary/30">
+    <section id="experience" ref={sectionRef} className="pb-16 px-6 lg:px-8 bg-secondary/30">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div
@@ -198,12 +214,12 @@ function TimelineCard({
       className={`bg-card rounded-xl border p-5 transition-all duration-500 ${
         isActive
           ? "border-primary/50 shadow-xl shadow-primary/10 scale-[1.02]"
-          : "border-border hover:border-primary/20"
+          : "border-border"
       } ${isLeft ? "md:ml-auto" : ""}`}
       style={{ maxWidth: "380px" }}
     >
       {/* Type Badge & Period */}
-      <div className={`flex items-center gap-3 mb-3 ${isLeft ? "md:justify-end" : ""}`}>
+      <div className={`flex items-center gap-3 mb-3 `}>
         <span
           className={`px-2.5 py-1 rounded-full text-xs font-semibold ${
             exp.type === "Full-time" ? "bg-primary/10 text-primary" : "bg-accent/10 text-accent"
@@ -221,16 +237,22 @@ function TimelineCard({
       <h3
         className={`text-lg font-bold text-foreground mb-1 transition-colors duration-300 ${
           isActive ? "text-primary" : ""
-        } ${isLeft ? "md:text-right" : ""}`}
+        } ${isLeft ? "md:text-left" : ""}`}
       >
         {exp.role}
       </h3>
-      <p className={`text-muted-foreground text-sm mb-3 ${isLeft ? "md:text-right" : ""}`}>
+      <p className={`text-muted-foreground text-sm mb-3 ${isLeft ? "md:text-left" : ""}`}>
         {exp.company} • {exp.location}
       </p>
 
+      <ul className={`list-disc list-inside mt-4 mb-4 text-sm text-muted-foreground space-y-1  ${isLeft ? "md:text-left" : ""}`}>
+        {exp.description.map((desc, index) => (
+          <li key={index}>{desc}</li>
+        ))}
+      </ul>
+
       {/* Technologies */}
-      <div className={`flex flex-wrap gap-1.5 ${isLeft ? "md:justify-end" : ""}`}>
+      <div className={`flex flex-wrap gap-1.5 `}>
         {exp.technologies.map((tech, i) => (
           <span
             key={tech}
