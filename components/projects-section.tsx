@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Automated OCR System",
+    title: "OCR System",
     category: "Computer Vision / AI",
     description:
       "OCR system that detects and recognizes text from images and documents using CRAFT for text detection and CRNN with CTC Loss for text recognition. Supports multi-language documents, structured text extraction, and outputs results for further analysis or processing.",
