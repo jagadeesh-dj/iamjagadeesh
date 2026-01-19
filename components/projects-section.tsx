@@ -9,29 +9,30 @@ const projects = [
     title: "HRMS System",
     category: "Backend / AI",
     description:
-      "End-to-end HR management platform featuring payroll processing, attendance tracking, and an AI-powered LLM assistant to automate HR queries and internal workflows, built for scalability and performance.",
+      "HR management platform that handles payroll processing, attendance tracking, leave management, and reporting. Features an AI-powered LLM assistant to answer HR queries, automate workflows, and improve internal efficiency across departments.",
     technologies: ["Flask", "FastAPI", "Celery", "Redis", "MySQL"],
-    link: "#",
+    link: "https://github.com/jagadeesh-dj/HRMS",
   },
   {
     id: 2,
-    title: "Finance Application",
-    category: "Analytics / ML",
+    title: "Automated OCR System",
+    category: "Computer Vision / AI",
     description:
-      "Real-time financial analytics application providing data insights and predictive forecasting using Gemini 1.5, with RESTful APIs designed for high-throughput and accurate decision support.",
-    technologies: ["FastAPI", "MySQL", "Gemini 1.5", "REST APIs"],
-    link: "#",
+      "OCR system that detects and recognizes text from images and documents using CRAFT for text detection and CRNN with CTC Loss for text recognition. Supports multi-language documents, structured text extraction, and outputs results for further analysis or processing.",
+    technologies: ["Streamlit", "FastAPI", "CRNN", "CRAFT", "ONNX Runtime", "Python", "OpenCV", "Tesseract"],
+    link: "https://github.com/jagadeesh-dj/OCR-System",
   },
   {
     id: 3,
-    title: "OCR System",
-    category: "Computer Vision",
+    title: "Multimodal RAG Assistant",
+    category: "AI / LLM / Retrieval",
     description:
-      "AI-driven document processing system leveraging deep learning–based OCR and LLM-powered post-processing to extract, validate, and structure data from unstructured documents efficiently.",
-    technologies: ["TensorFlow", "Keras", "OpenCV", "Django"],
-    link: "#",
-  },
+      "Multimodal Retrieval-Augmented Generation system that processes text, tables, charts, and diagrams. Uses IBM Docling and Visual Language Models to retrieve relevant information and answer complex questions across documents, enabling intelligent document understanding and knowledge extraction.",
+    technologies: ["LangChain", "RAG", "Docling", "Visual Language Models", "Python", "MongoDB", "OpenAI LLMs"],
+    link: "https://github.com/jagadeesh-dj/VisionRAG  ",
+  }
 ];
+
 
 
 

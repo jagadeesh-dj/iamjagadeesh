@@ -9,14 +9,12 @@ const skills = [
   "Django",
   "Flask",
   "REST APIs",
-  "JWT",
-  "OAuth",
   "TensorFlow",
   "PyTorch",
   "Keras",
   "NLP",
   "Computer Vision",
-  "LLM Integration",
+  "Gen AI",
   "MySQL",
   "MS SQL",
   "Azure",
@@ -24,6 +22,7 @@ const skills = [
   "Git",
   "Pytest",
   "Selenium",
+  "CI/CD"
 ]
 
 const experience = {
