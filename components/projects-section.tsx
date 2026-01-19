@@ -20,7 +20,7 @@ const projects = [
     description:
       "OCR system that detects and recognizes text from images and documents using CRAFT for text detection and CRNN with CTC Loss for text recognition. Supports multi-language documents, structured text extraction, and outputs results for further analysis or processing.",
     technologies: ["Streamlit", "FastAPI", "CRNN", "CRAFT", "ONNX Runtime", "Python", "OpenCV", "Tesseract"],
-    link: "https://github.com/jagadeesh-dj/OCR-System",
+    link: "https://github.com/jagadeesh-dj/CRNN-OCR",
   },
   {
     id: 3,
